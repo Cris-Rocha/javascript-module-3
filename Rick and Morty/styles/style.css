@@ -2,13 +2,20 @@
     height: 50px;
     width: auto;
     background-color: aquamarine;
-
 }
-/* 
+
 #sidebar-menu {  
     background-color: palevioletred;
-    height: 150px;
-    width: 100px;
-    margin-top: 30px;
+    height: 200px ;
+    width: 200px;
+    /* width: fit-content; */
+    display: block;
+}   
 
-} */    
+/* #container-img{
+
+    background-color: #03a9f4;
+    width: 500px;
+    height: 200px;
+    display: block;
+} */

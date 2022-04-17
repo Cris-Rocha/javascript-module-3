@@ -20,6 +20,45 @@ root.appendChild(contenedorImages)
 
 
 
+function loadEpisodes() {
+    fetch("https://rickandmortyapi.com/api/episode")
+    .then(res => res.json())
+    .then(episodes => showEpisodeLinks(episodes));
+}
+
+function showEpisodeLinks(episodes){
+    
+    episodes.results
+    .map(episode =>createEpisodeLink(episode))
+    .forEach(episode => console.log(episode.name))
+
+}
+
+function createEpisodeLink(episode){
+    const episodeLink = document.createElement("div")
+    episodeLink.classList.add('episodeLink')
+    episodeLink.innerText = episode.name
+    episodeLink.addEventListener('click', () => showEpisodeDetail(episode))
+    return episodeLink
+}
+
+function showEpisodeDetail(episode){
+   const main = document.getElementById('main')
+   main.innerText = `<h2>${episode.name}</h2>` + `<h3>${episode.episode} | ${episode.air_date}</h3>`
+
+   episode.character.forEach(characterUrl => console.log(characterUrl))
+       
+   };
+
+function createCharacterThumbnail(characterUrl) {
+
+}   
+
+function renderCharacterThumbnail (){
+    
+}
+
+
 
 
 
