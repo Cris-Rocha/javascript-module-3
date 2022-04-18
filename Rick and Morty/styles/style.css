@@ -140,7 +140,11 @@ body {
   border: 1px solid rgb(199, 228, 133);
 }
 
-#sidebar-menu {
+#content {
+    margin: 1px solid rgb(143, 143, 10);
+}
+
+#sidebar {
   background-color: rgb(243, 201, 215);
   height: 700px;
   width: 200px;
@@ -151,7 +155,7 @@ body {
   display: block;
 }
 
-#container-img {
+#main {
   background-color: #102733;
   width: 200px;
   height: 200px;
