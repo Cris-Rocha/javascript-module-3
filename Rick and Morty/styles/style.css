@@ -136,14 +136,16 @@ body {
 
 #header {
     height: 150px;
-    /* background-image: url(https://github.com/Cris-Rocha/javascript-module-3/blob/main/Rick%20and%20Morty/images/image4.png?raw=true); */
     border: 1px solid rgb(199, 228, 133);
-    
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #logo {
-    height: 80px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
 }
 #content {
   margin: 1px solid rgb(143, 143, 10);
