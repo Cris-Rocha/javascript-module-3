@@ -133,38 +133,43 @@ body {
   background-image: url(https://w0.peakpx.com/wallpaper/320/744/HD-wallpaper-rick-and-morty-galaxy.jpg);
 }
 
+
 #header {
-  height: 100px;
-  background-image: url(https://github.com/Cris-Rocha/javascript-module-3/blob/main/Rick%20and%20Morty/images/image4.png?raw=true);
-  background-size:contain;
-  border: 1px solid rgb(199, 228, 133);
+    height: 150px;
+    /* background-image: url(https://github.com/Cris-Rocha/javascript-module-3/blob/main/Rick%20and%20Morty/images/image4.png?raw=true); */
+    border: 1px solid rgb(199, 228, 133);
+    
+    justify-content: center;
 }
 
+#logo {
+    height: 80px;
+}
 #content {
-    margin: 1px solid rgb(143, 143, 10);
+  margin: 1px solid rgb(143, 143, 10);
+  display: flex;
+  flex-direction: row;
 }
 
 #sidebar {
-    margin: 5px;
-    padding: 7px;
-    line-height: 30px;
-    font-size: 18px;
-    
-  background-color: rgba(243, 201, 215, 0.329); 
+  order: 1;
+  margin: 5px;
+  padding: 7px;
+  line-height: 30px;
+  font-size: 18px;
+  background-color: rgba(243, 201, 215, 0.329);
   height: 700px;
   width: 300px;
   border: 1px solid darkred;
   color: rgb(235, 226, 243);
-
 }
 
 #main {
-  background-color: #102733;
-  width: 200px;
-  height: 200px;
-  /* position: absolute;
-  justify-content: flex-end; */
+  order: 2;
+   margin: 5px;
+  padding: 7px;
+  background-color: #13466154;
+  width: 700px;
+  height: 700px;
   border: 1px solid greenyellow;
-  display: inherit;
-  position: absolute;
 }
