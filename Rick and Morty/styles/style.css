@@ -57,9 +57,13 @@ body{
 #header {
     height: 50px;
     width: auto;
-    background-color: rgb(215, 240, 231);
+    /* background-color: rgb(215, 240, 231); */
     border: 1px solid black;
-    
+    color: white;
+    font-size: 50px;
+   justify-content: center;
+   display: inline-block;
+
 }
 
 #sidebar-menu {  
@@ -72,9 +76,10 @@ body{
 }   
 
 #container-img{
- background-color: #cee0e9;
+ background-color: #102733;
     width: 200px;
     height: 200px;
     display:inline-block;
+    /* margin: 20px; */
    border: 1px solid greenyellow;
 } 
