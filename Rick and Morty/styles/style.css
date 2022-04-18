@@ -145,14 +145,17 @@ body {
 }
 
 #sidebar {
-  background-color: rgb(243, 201, 215);
+    margin: 5px;
+    padding: 7px;
+    line-height: 30px;
+    font-size: 18px;
+    
+  background-color: rgba(243, 201, 215, 0.329); 
   height: 700px;
-  width: 200px;
+  width: 300px;
   border: 1px solid darkred;
-  /* position: absolute;
-  flex-wrap: wrap;
-  justify-content: inline-block; */
-  display: block;
+  color: rgb(235, 226, 243);
+
 }
 
 #main {
@@ -163,4 +166,5 @@ body {
   justify-content: flex-end; */
   border: 1px solid greenyellow;
   display: inherit;
+  position: absolute;
 }
