@@ -5,7 +5,7 @@ const root = document.getElementById("root");
 const htmlElementCreator = () => {
   const buildRoot = document.getElementById("root");
   root.innerHTML =
-    '<div id="header"></div>' +
+    '<div id="header"> <img id="logo" src="https://raw.githubusercontent.com/Cris-Rocha/javascript-module-3/main/Rick%20and%20Morty/images/image4.png" alt="Ricky & Morty Logo"></a></div>' +
     '<div id="content">' +
     '<div id="sidebar"><div id="chapters"></div></div>' +
     '<div id="main"></div>';
