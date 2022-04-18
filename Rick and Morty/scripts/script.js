@@ -8,40 +8,40 @@ const htmlElementCreator = () => {
     '<div id="header"></div>' +
     '<div id="content">' +
     '<div id="sidebar"><div id="chapters"></div></div>' +
-    '<div id="main"></div>'
-    '</div>';
+    '<div id="main"></div>';
+  ("</div>");
 };
 
-htmlElementCreator()
-loadEpisodes()
+htmlElementCreator();
+loadEpisodes();
 
-// es lo mismo que hacer asi, pero para cada uno de los elementos: 
+// es lo mismo que hacer asi, pero para cada uno de los elementos:
 
 // const headerSection = document.createElement("div"); // con comillas
 // headerSection.id = "header";
 // root.appendChild(headerSection); // aqui sin comillas
 
-
 function loadEpisodes() {
   fetch("https://rickandmortyapi.com/api/episode")
-    .then(res => res.json()) // el fetch devuelve una promesa, cuando este cumplida quiero una respuesta y la respuesta  que me devuelva json
-    .then(episodes => showEpisodeLinks(episodes));
+    .then((res) => res.json()) // el fetch devuelve una promesa, cuando este cumplida quiero una respuesta y la respuesta  que me devuelva json
+    .then((episodes) => showEpisodeLinks(episodes));
 }
-
 
 function showEpisodeLinks(episodes) {
+  const sidebar = document.getElementById("sidebar")
   episodes.results
-
-     .forEach((episode) => console.log(episode.name));
+    .map((episode) => createEpisodeLink(episode)) // this put on the HTML the information of this function
+    // .forEach((episode) => console.log(episode.name))
+    .forEach(node => sidebar.appendChild(node))
 }
 
-// function createEpisodeLink(episode) {
-//   const episodeLink = document.createElement("div");
-//   episodeLink.classList.add("episodeLink");
-//   episodeLink.innerText = episode.name;
-//   episodeLink.addEventListener("click", () => showEpisodeDetail(episode));
-//   return episodeLink;
-// }
+function createEpisodeLink(episode) {
+  const episodeLink = document.createElement("div")
+  episodeLink.classList.add("episodeLink")
+  episodeLink.innerText = episode.name
+  // episodeLink.addEventListener("click", () => showEpisodeDetail(episode));
+  return episodeLink
+}
 
 // function showEpisodeDetail(episode) {
 //   const main = document.getElementById("main");
