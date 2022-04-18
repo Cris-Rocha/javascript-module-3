@@ -8,14 +8,14 @@
     background-color: palevioletred;
     height: 200px ;
     width: 200px;
-    /* width: fit-content; */
-    display: block;
+    display: inline-block;
+    
 }   
 
-/* #container-img{
-
-    background-color: #03a9f4;
-    width: 500px;
+#container-img{
+ background-color: #03a9f4;
+    width: 200px;
     height: 200px;
-    display: block;
-} */
+    display:inline-block
+   
+} 
