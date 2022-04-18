@@ -29,12 +29,12 @@ function loadEpisodes() {
 }
 
 
-
-// function showEpisodeLinks(episodes) {
+function showEpisodeLinks(episodes) {
+    console.log(episodes);
 //   episodes.results
 //     .map((episode) => createEpisodeLink(episode))
 //     .forEach((episode) => console.log(episode.name));
-// }
+}
 
 // function createEpisodeLink(episode) {
 //   const episodeLink = document.createElement("div");
