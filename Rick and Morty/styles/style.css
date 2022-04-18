@@ -3,83 +3,160 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 /* El estilo empieza aqui */
 
-body{
-    background-image: url(https://w0.peakpx.com/wallpaper/320/744/HD-wallpaper-rick-and-morty-galaxy.jpg);
+body {
+  background-image: url(https://w0.peakpx.com/wallpaper/320/744/HD-wallpaper-rick-and-morty-galaxy.jpg);
 }
-
-
 
 #header {
-    height: 50px;
-    width: auto;
-    /* background-color: rgb(215, 240, 231); */
-    border: 1px solid black;
-    color: white;
-    font-size: 50px;
-   justify-content: center;
-   display: inline-block;
-
+  height: 100px;
+  background-image: url(https://github.com/Cris-Rocha/javascript-module-3/blob/main/Rick%20and%20Morty/images/image4.png?raw=true);
+  background-size:contain;
+  border: 1px solid rgb(199, 228, 133);
 }
 
-#sidebar-menu {  
-    background-color: rgb(243, 201, 215);
-    height: 200px ;
-    width: 200px;
-    display: inline-block;
-    border: 1px solid darkred;
-    
-}   
+#sidebar-menu {
+  background-color: rgb(243, 201, 215);
+  height: 700px;
+  width: 200px;
+  border: 1px solid darkred;
+  /* position: absolute;
+  flex-wrap: wrap;
+  justify-content: inline-block; */
+  display: block;
+}
 
-#container-img{
- background-color: #102733;
-    width: 200px;
-    height: 200px;
-    display:inline-block;
-    /* margin: 20px; */
-   border: 1px solid greenyellow;
-} 
+#container-img {
+  background-color: #102733;
+  width: 200px;
+  height: 200px;
+  /* position: absolute;
+  justify-content: flex-end; */
+  border: 1px solid greenyellow;
+  display: inherit;
+}
