@@ -30,10 +30,9 @@ function loadEpisodes() {
 
 
 function showEpisodeLinks(episodes) {
-    console.log(episodes);
-//   episodes.results
-//     .map((episode) => createEpisodeLink(episode))
-//     .forEach((episode) => console.log(episode.name));
+  episodes.results
+
+     .forEach((episode) => console.log(episode.name));
 }
 
 // function createEpisodeLink(episode) {
