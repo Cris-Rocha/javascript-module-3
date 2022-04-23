@@ -42,7 +42,16 @@
  */
 
 // Create the Person class
-class Person {}
+class Person {
+    constructor(firstName, lastName) {
+        this.firstName = firstName
+        this.lastName = lastName
+    }
+
+    sayName(){
+        return this.firstName + " " + this.lastName
+    }
+}
 
 // Create the Employee class that extends the Person class
 class Employee {}
