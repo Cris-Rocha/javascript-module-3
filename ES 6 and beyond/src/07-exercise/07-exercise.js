@@ -11,7 +11,7 @@
 
 // Finish the code of the function
 function exercise07() {
-    let func = "";
+    let func = (a,b) => a+b;
 
     // Don’t change the code bellow this line
     return func;
@@ -19,3 +19,20 @@ function exercise07() {
 
 // Don’t change the code bellow this line
 export default exercise07;
+
+
+/* printa
+
+ PASS  src/__tests__/07-exercise.test.js
+  07-exercise
+    ✓ store an arrow function in the `func` variable (2 ms)
+    ✓ func should be an arrow function (1 ms)
+    ✓ func should return the sum of the parameters (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        0.934 s, estimated 1 s
+Ran all test suites matching /src\/__tests__\/07-exercise.test.js/i.
+
+*/
