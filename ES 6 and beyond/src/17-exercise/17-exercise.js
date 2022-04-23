@@ -21,7 +21,11 @@
  */
 
 // Finish the code of the function
-function exercise17() {}
+function exercise17() {
+    fetch ("https://jsonplaceholder.typicode.com/users/1")
+    .then( res => res.json())
+    .then(displayContents)
+}
 
 // Don’t change the code bellow this line
 function displayContents(data) {
@@ -31,3 +35,18 @@ function displayContents(data) {
 }
 
 export default exercise17;
+
+/** respuesta del test:
+ * 
+ *  PASS  src/__tests__/17-exercise.test.js
+  17-exercise
+    ✓ use fetch to make a network call (7 ms)
+    ✓ pass the data from the fetch call to the displayContents function (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        0.938 s, estimated 1 s
+Ran all test suites matching /src\/__tests__\/17-exercise.test.js/i.
+
+*/
