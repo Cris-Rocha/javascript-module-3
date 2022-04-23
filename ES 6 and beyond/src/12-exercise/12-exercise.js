@@ -9,7 +9,7 @@
  *
  * function fn (array, entry) {...}
  *
- * 2. Executes the array.includes() method to check if the `entry`
+ * 2. Executes the   method to check if the `entry`
  *    is in the `array` parameter that the function receives.
  *
  * 3. Returns the result

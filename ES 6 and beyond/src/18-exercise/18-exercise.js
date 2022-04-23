@@ -19,7 +19,11 @@
  */
 
 // Finish the code of the function
-function exercise18() {}
+async function exercise18() {
+    const rest = await fetch("https://jsonplaceholder.typicode.com/users/1");
+    const body = await rest.json()
+    displayContents(body)
+}
 
 // Don’t change the code bellow this line
 function displayContents(data) {
@@ -29,3 +33,21 @@ function displayContents(data) {
 }
 
 export default exercise18;
+
+/** Respuesta del test:
+ 
+
+ PASS  src/__tests__/18-exercise.test.js
+  18-exercise
+    ✓ convert the exercise18 to be of type async (1 ms)
+    ✓ use fetch to make a network call (6 ms)
+    ✓ pass the data from the fetch call to the displayContents function (1 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       3 passed, 3 total
+Snapshots:   0 total
+Time:        0.943 s, estimated 2 s
+Ran all test suites matching /src\/__tests__\/18-exercise.test.js/i.
+ 
+
+ */
