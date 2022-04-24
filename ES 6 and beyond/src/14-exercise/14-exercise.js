@@ -22,6 +22,7 @@ export {add}
 /* resultado del test:
 
  PASS  src/__tests__/14-exercise.test.js
+  
   14-exercise
     ✓ export a named function that returns the sum of it’s parameters (47 ms)
 
