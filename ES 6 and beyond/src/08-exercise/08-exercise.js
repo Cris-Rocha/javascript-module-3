@@ -22,7 +22,7 @@ function exercise08 () {
 // Don’t change the code bellow this line
 export default exercise08;
 
-// la function devuelve una function
+// la function devuelve una function.
 
 /* prints:
 
