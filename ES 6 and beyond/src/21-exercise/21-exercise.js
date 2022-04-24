@@ -54,7 +54,15 @@ class Person {
 }
 
 // Create the Employee class that extends the Person class
-class Employee {}
+class Employee extends Person {
+    constructor(firstName, lastName, jobTitle) {
+        super(firstName, lastName), 
+        this.jobTitle = jobTitle;
+    }
+    getJobTitle(){
+        return this.jobTitle
+    }
+}
 
 // Create a new instance of the `Employee` class with the arguments:
 //
@@ -63,7 +71,21 @@ class Employee {}
 // jobTitle: "Developer"
 //
 // Store the new instance in the `ana` variable
-const ana = "";
+const ana = new Employee("Ana", "Spark", "Developer");
 
 // Don’t change the code bellow this line
 export { Person, Employee, ana };
+
+/* Resultado del test:
+
+ PASS  src/__tests__/21-exercise.test.js
+  21-exercise
+    ✓ create a class Employee that extends the Person class (2 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        0.94 s, estimated 1 s
+Ran all test suites matching /src\/__tests__\/21-exercise.test.js/i.
+
+*/
